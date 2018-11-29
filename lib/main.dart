@@ -33,18 +33,19 @@ class _MyAppState extends State {
               ),
             ),
             Column(
-                children: _products
-                    .map(
-                      (element) => Card(
-                            child: Column(
-                              children: <Widget>[
-                                Image.asset('assets/kubeflow.jpg'),
-                                Text(element),
-                              ],
-                            ),
+              children: _products
+                  .map(
+                    (element) => Card(
+                          child: Column(
+                            children: <Widget>[
+                              Image.asset('assets/kubeflow.jpg'),
+                              Text(element),
+                            ],
                           ),
-                    )
-                    .toList())
+                        ),
+                  )
+                  .toList()
+            )
           ],
         ),
       ),
