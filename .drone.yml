@@ -1,0 +1,8 @@
+kind: pipeline
+name: testing
+
+steps:
+- name: flutter
+  image: appleboy/flutter-docker:1.0.0
+  commands:
+  - flutter test
